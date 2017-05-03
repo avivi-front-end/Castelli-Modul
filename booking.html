@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ie-detector.js"></script>
+    <script src="js/modernizr.js"></script><!--[if lt IE 7]>  <meta http-equiv="X-UA-Compatible" content="IE=edge"/> <![endif]-->
+  </head>
+  <div class="page-wrapper" id="page-wrapper">
+    <div class="page-body" id="page-body">
+      <div class="wrapper">
+        <div class="index__top-menu"><span class="wrapper__title">new show booking</span>
+          <div class="index__top-menu--right"><a class="index__top-menu__btn" href="#">Add new show booking form</a></div>
+        </div>
+      </div>
+      <form class="booking-form js-booking-form"><span class="booking-form__title">1. event information</span>
+        <div class="booking-form__section">
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Name of event:</span></div>
+            <input class="booking-form__input" type="text" name="name">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Website of event:</span></div>
+            <input class="booking-form__input" type="text" name="website">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Dates of Event: Start Date</span></div>
+            <input class="booking-form__input" type="text" name="date__start">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Dates of Event: Finish Date</span></div>
+            <input class="booking-form__input" type="text" name="date__end">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Show attendance figures:</span></div>
+            <input class="booking-form__input" type="text" name="attendance">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">How many years has the show been going on:</span></div>
+            <input class="booking-form__input" type="text" name="years">
+          </label><span class="booking-form__title">YOUR BOOTH SIZE</span>
+          <div class="booking-form__section">
+            <label class="booking-form__label-checkbox w50">
+              <input class="booking-form__input--checkbox" type="checkbox" name="size" value="10x10"><span class="booking-form__checkbox-text">10*10</span>
+            </label>
+            <label class="booking-form__label-checkbox w50">
+              <input class="booking-form__input--checkbox" type="checkbox" name="size" value="10x20"><span class="booking-form__checkbox-text">10*20</span>
+            </label>
+            <label class="booking-form__label-checkbox w50">
+              <input class="booking-form__input--checkbox" type="checkbox" name="size" value="10x30"><span class="booking-form__checkbox-text">10*30</span>
+            </label>
+            <label class="booking-form__label-checkbox w50">
+              <input class="booking-form__input--checkbox" type="checkbox" name="size" value="other"><span class="booking-form__checkbox-text">other size</span>
+            </label>
+            <label class="booking-form__label w50 input-other-size">
+              <div><span class="booking-form__subtitle">Please specify, if you choose "other"</span></div>
+              <input class="booking-form__input w100" type="text" name="other__size">
+            </label>
+          </div>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Your Booth Cost:</span></div>
+            <input class="booking-form__input" type="text" name="cost">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">How much competition:</span></div>
+            <input class="booking-form__input" type="text" name="competition">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Competition booth:</span></div>
+            <input class="booking-form__input" type="text" name="competition_booth">
+          </label>
+        </div><span class="booking-form__title">2. EVENT ADDRESS</span>
+        <div class="booking-form__section">
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Venue</span></div>
+            <input class="booking-form__input" type="text" name="venue">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Address</span></div>
+            <input class="booking-form__input" type="text" name="address">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">City/Town</span></div>
+            <input class="booking-form__input" type="text" name="city">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">State/Province</span></div>
+            <select class="booking-form__input" name="select">
+              <option value="town-1" selected="selected">town-1</option>
+              <option value="town-2">town-2</option>
+              <option value="town-3">town-3</option>
+              <option value="town-4">town-4</option>
+              <option value="town-5">town-5</option>
+            </select>
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">ZIP/Postal Code</span></div>
+            <input class="booking-form__input type__number" type="text" name="zip">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Country</span></div>
+            <input class="booking-form__input" type="text" name="country">
+          </label>
+        </div><span class="booking-form__title">3. EXHIBITING INFO</span>
+        <div class="booking-form__section">
+          <label class="booking-form__label w100">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Dates&hours of exhibiting</span></div>
+            <textarea class="booking-form__input" name="text__dates"></textarea>
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Booth number</span></div>
+            <input class="booking-form__input" type="text" name="booth_number">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Show manager name</span></div>
+            <input class="booking-form__input" type="text" name="manager_name">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Show management responsible person on site</span></div>
+            <input class="booking-form__input" type="text" name="person_on_site">
+          </label>
+          <label class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Show Manager Phone Number</span></div>
+            <input class="booking-form__input" type="tel" name="manager_tel">
+          </label>
+          <label class="booking-form__label w100">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Set up dates and times</span></div>
+            <textarea class="booking-form__input" name="set_up_dates_and_times"></textarea>
+          </label>
+          <label class="booking-form__label w100">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Break down dates and times</span></div>
+            <textarea class="booking-form__input" name="break_down_dates_and_times"></textarea>
+          </label>
+          <div class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Electricity included</span>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="electricity_included" value="yes"><span class="booking-form__checkbox-text">Yes</span>
+              </div>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="electricity_included" value="no"><span class="booking-form__checkbox-text">No</span>
+              </div>
+              <label class="booking-form__label w100">
+                <div><span class="booking-form__subtitle">Provider details</span></div>
+                <input class="booking-form__input" type="text" name="electricity_included_text">
+              </label>
+            </div>
+          </div>
+          <div class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Carpet included</span>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="carpet_included" value="yes"><span class="booking-form__checkbox-text">Yes</span>
+              </div>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="carpet_included" value="no"><span class="booking-form__checkbox-text">No</span>
+              </div>
+              <label class="booking-form__label w100">
+                <div><span class="booking-form__subtitle">Provider details</span></div>
+                <input class="booking-form__input" type="text" name="carpet_included_text">
+              </label>
+            </div>
+          </div>
+          <div class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Internet included</span>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="internet_included" value="yes"><span class="booking-form__checkbox-text">Yes</span>
+              </div>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="internet_included" value="no"><span class="booking-form__checkbox-text">No</span>
+              </div>
+              <label class="booking-form__label w100">
+                <div><span class="booking-form__subtitle">Provider details</span></div>
+                <input class="booking-form__input" type="text" name="internet_included_text">
+              </label>
+            </div>
+          </div>
+          <div class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Furnishers included</span>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="furnishers_included" value="yes"><span class="booking-form__checkbox-text">Yes</span>
+              </div>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="furnishers_included" value="no"><span class="booking-form__checkbox-text">No</span>
+              </div>
+              <label class="booking-form__label w100">
+                <div><span class="booking-form__subtitle">Provider details</span></div>
+                <input class="booking-form__input" type="text" name="furnishers_included_text">
+              </label>
+            </div>
+          </div>
+          <div class="booking-form__label w50">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">Union Convention Center</span>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="union_convention_center" value="yes"><span class="booking-form__checkbox-text">Yes</span>
+              </div>
+              <div class="booking-form__label-checkbox w50">
+                <input class="booking-form__input--checkbox" type="radio" name="union_convention_center" value="no"><span class="booking-form__checkbox-text">No</span>
+              </div>
+            </div>
+          </div>
+        </div><span class="booking-form__title">EXHIBITOR INCURANCE REQUIRED</span>
+        <div class="booking-form__section">
+          <label class="booking-form__label w100">
+            <div><span class="booking-form__subtitle booking-form__subtitle--dec">&nbsp;</span></div>
+            <div class="booking-form__label-checkbox w50">
+              <input class="booking-form__input--checkbox" type="radio" name="EXHIBITOR" value="yes"><span class="booking-form__checkbox-text">Yes</span>
+            </div>
+            <div class="booking-form__label-checkbox w50">
+              <input class="booking-form__input--checkbox" type="radio" name="EXHIBITOR" value="no"><span class="booking-form__checkbox-text">No</span>
+            </div>
+            <div class="booking-form__label-checkbox w50">
+              <input class="booking-form__input--checkbox" type="radio" name="EXHIBITOR" value="special"><span class="booking-form__checkbox-text">Special Insurance Required</span>
+            </div>
+            <label class="booking-form__label w50">
+              <div><span class="booking-form__subtitle">Please specify Special Insurance Required</span></div>
+              <input class="booking-form__input" type="text" name="EXHIBITOR_text">
+            </label>
+          </label>
+        </div>
+        <label class="booking-form__label w100">
+          <div><span class="booking-form__subtitle booking-form__subtitle--dec">Any Other Important Information</span></div>
+          <textarea class="booking-form__input" name="other_text"></textarea>
+        </label>
+        <div class="booking-form__verification"><span class="wrapper__title">VERIFICATION</span><span class="booking-form__text">Logged in as&nbsp;<a href="#">example test</a>. Verification not required.</span></div>
+        <input class="booking-form__submit" type="submit" value="Done">
+      </form>
+    </div>
+  </div>
+  <script src="js/libs.js"></script>
+  <script src="js/common.js"></script>
+  <script src="//localhost:35729/livereload.js"></script>
+</html>

@@ -1,0 +1,215 @@
+.wrapper
+    .index__top-menu
+        span.wrapper__title new show booking
+        .index__top-menu--right
+            a(href="#").index__top-menu__btn Add new show booking form
+form.booking-form.js-booking-form
+    span.booking-form__title 1. event information
+    .booking-form__section
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Name of event:
+            input(type="text" name="name").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Website of event:
+            input(type="text" name="website").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Dates of Event: Start Date
+            input(type="text" name="date__start").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Dates of Event: Finish Date
+            input(type="text" name="date__end").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Show attendance figures:
+            input(type="text" name="attendance").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec How many years has the show been going on:
+            input(type="text" name="years").booking-form__input
+        span.booking-form__title YOUR BOOTH SIZE
+        .booking-form__section
+            label.booking-form__label-checkbox.w50
+                input(type="checkbox" name="size" value="10x10").booking-form__input--checkbox
+                span.booking-form__checkbox-text 10*10
+            label.booking-form__label-checkbox.w50
+                input(type="checkbox" name="size" value="10x20").booking-form__input--checkbox
+                span.booking-form__checkbox-text 10*20
+            label.booking-form__label-checkbox.w50
+                input(type="checkbox" name="size" value="10x30").booking-form__input--checkbox
+                span.booking-form__checkbox-text 10*30
+            label.booking-form__label-checkbox.w50
+                input(type="checkbox" name="size" value="other").booking-form__input--checkbox
+                span.booking-form__checkbox-text other size
+            label.booking-form__label.w50.input-other-size
+                div
+                    span.booking-form__subtitle Please specify, if you choose "other"
+                input(type="text" name="other__size").booking-form__input.w100
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Your Booth Cost:
+            input(type="text" name="cost").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec How much competition:
+            input(type="text" name="competition").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Competition booth:
+            input(type="text" name="competition_booth").booking-form__input
+    span.booking-form__title 2. EVENT ADDRESS
+    .booking-form__section
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Venue
+            input(type="text" name="venue").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Address
+            input(type="text" name="address").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec City/Town
+            input(type="text" name="city").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec State/Province
+            select(name="select").booking-form__input
+                option(value="town-1", selected="selected") town-1
+                option(value="town-2") town-2
+                option(value="town-3") town-3
+                option(value="town-4") town-4
+                option(value="town-5") town-5
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec ZIP/Postal Code
+            input(type="text" name="zip").booking-form__input.type__number
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Country
+            input(type="text" name="country").booking-form__input
+    span.booking-form__title 3. EXHIBITING INFO
+    .booking-form__section
+        label.booking-form__label.w100
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Dates&hours of exhibiting
+            textarea(name="text__dates").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Booth number
+            input(type="text" name="booth_number").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Show manager name
+            input(type="text" name="manager_name").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Show management responsible person on site
+            input(type="text" name="person_on_site").booking-form__input
+        label.booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Show Manager Phone Number
+            input(type="tel" name="manager_tel").booking-form__input
+        label.booking-form__label.w100
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Set up dates and times
+            textarea(name="set_up_dates_and_times").booking-form__input
+        label.booking-form__label.w100
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Break down dates and times
+            textarea(name="break_down_dates_and_times").booking-form__input
+        .booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Electricity included
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="electricity_included" value="yes").booking-form__input--checkbox
+                    span.booking-form__checkbox-text Yes
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="electricity_included" value="no").booking-form__input--checkbox
+                    span.booking-form__checkbox-text No
+                label.booking-form__label.w100
+                    div
+                        span.booking-form__subtitle Provider details
+                    input(type="text" name="electricity_included_text").booking-form__input
+        .booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Carpet included
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="carpet_included" value="yes").booking-form__input--checkbox
+                    span.booking-form__checkbox-text Yes
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="carpet_included" value="no").booking-form__input--checkbox
+                    span.booking-form__checkbox-text No
+                label.booking-form__label.w100
+                    div
+                        span.booking-form__subtitle Provider details
+                    input(type="text" name="carpet_included_text").booking-form__input
+        .booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Internet included
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="internet_included" value="yes").booking-form__input--checkbox
+                    span.booking-form__checkbox-text Yes
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="internet_included" value="no").booking-form__input--checkbox
+                    span.booking-form__checkbox-text No
+                label.booking-form__label.w100
+                    div
+                        span.booking-form__subtitle Provider details
+                    input(type="text" name="internet_included_text").booking-form__input
+        .booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Furnishers included
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="furnishers_included" value="yes").booking-form__input--checkbox
+                    span.booking-form__checkbox-text Yes
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="furnishers_included" value="no").booking-form__input--checkbox
+                    span.booking-form__checkbox-text No
+                label.booking-form__label.w100
+                    div
+                        span.booking-form__subtitle Provider details
+                    input(type="text" name="furnishers_included_text").booking-form__input
+        .booking-form__label.w50
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec Union Convention Center
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="union_convention_center" value="yes").booking-form__input--checkbox
+                    span.booking-form__checkbox-text Yes
+                .booking-form__label-checkbox.w50
+                    input(type="radio" name="union_convention_center" value="no").booking-form__input--checkbox
+                    span.booking-form__checkbox-text No
+    span.booking-form__title EXHIBITOR INCURANCE REQUIRED
+    .booking-form__section
+        label.booking-form__label.w100
+            div
+                span.booking-form__subtitle.booking-form__subtitle--dec &nbsp;
+            .booking-form__label-checkbox.w50
+                input(type="radio" name="EXHIBITOR" value="yes").booking-form__input--checkbox
+                span.booking-form__checkbox-text Yes
+            .booking-form__label-checkbox.w50
+                input(type="radio" name="EXHIBITOR" value="no").booking-form__input--checkbox
+                span.booking-form__checkbox-text No
+            .booking-form__label-checkbox.w50
+                input(type="radio" name="EXHIBITOR" value="special").booking-form__input--checkbox
+                span.booking-form__checkbox-text Special Insurance Required
+            label.booking-form__label.w50
+                div
+                    span.booking-form__subtitle Please specify Special Insurance Required
+                input(type="text" name="EXHIBITOR_text").booking-form__input
+    label.booking-form__label.w100
+        div
+            span.booking-form__subtitle.booking-form__subtitle--dec Any Other Important Information
+        textarea(name="other_text").booking-form__input
+    .booking-form__verification
+        span.wrapper__title VERIFICATION
+        span.booking-form__text
+            | Logged in as&nbsp;
+            a(href="#") example test
+            | . Verification not required.
+    input(type="submit", value="Done").booking-form__submit
+
+

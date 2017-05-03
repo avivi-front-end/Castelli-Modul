@@ -48,4 +48,36 @@ $(function() {
 //-----------------------------------------------------------------------------
   $('input[placeholder], textarea[placeholder]').placeholder();
 
+  $('.index__sidebar__link').click(function () {
+      $('.index__sidebar__link').removeClass('active');
+      $(this).addClass('active');
+  });
+
+    $('.index__top-menu__tab-btn').click(function () {
+        $('.index__top-menu__tab-btn').removeClass('active');
+        $(this).addClass('active');
+
+        $('.index__tab').removeClass('active');
+        var indexTab = "." + $(this).data('tab');
+        console.log(indexTab);
+        $(indexTab).addClass('active');
+    });
+
+    $('.booking-form__input--checkbox[value="other"]').click(function () {
+       if ($(this).prop("checked")) {
+           $('.input-other-size').show();
+       } else {
+           $('.input-other-size').hide();
+       }
+    });
+
+    $('.type__number').on('keyup keypress', function(e) {
+        if (e.keyCode == 8 || e.keyCode == 46) {}
+        else
+        {
+            var letters='1234567890';
+            return (letters.indexOf(String.fromCharCode(e.which))!=-1);
+        }
+    });
+
 });
